@@ -46,7 +46,7 @@ http://snapshots.linaro.org/96boards/dragonboard410c/linaro/rescue/latest/dragon
 Then run:
 
     cd dragonboard-410c-bootloader-emmc-linux-*/
-    sudo <PATH to qdl>/qdl prog_emmc_firehose_8916.mbn rawprogram*.xml patch*.xml
+    sudo <PATH to qdl>/qdl --out-chunk-size 4096 prog_emmc_firehose_8916.mbn rawprogram*.xml patch*.xml
 
 It should take a few seconds. And you should eventually get something like below
 from QDL stdout:
